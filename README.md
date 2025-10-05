@@ -1,13 +1,12 @@
 
-````markdown
-# ms-identity
+ms-identity
 
 A Spring Boot–based microservice for managing authentication, registration, and token security within a distributed system.  
 This service provides RESTful endpoints for user authentication and registration, supports token storage via Redis, and integrates seamlessly with other microservices through Feign clients.  
 
 ---
 
-## 🧭 Table of Contents
+🧭 Table of Contents
 
 1. [Overview](#overview)  
 2. [Features](#features)  
@@ -24,7 +23,7 @@ This service provides RESTful endpoints for user authentication and registration
 
 ---
 
-## 📘 Overview
+📘 Overview
 
 `ms-identity` acts as a core identity service responsible for authenticating users, issuing tokens, and managing session data across distributed systems.  
 It integrates with Redis for token caching and uses Feign clients for inter-service communication.  
@@ -32,7 +31,7 @@ This microservice can be easily embedded within a larger ecosystem, handling aut
 
 ---
 
-## ✨ Features
+✨ Features
 
 - **JWT-based Authentication** — Secure login and token issuance.  
 - **User Registration** — API endpoints for new user creation and validation.  
@@ -44,9 +43,9 @@ This microservice can be easily embedded within a larger ecosystem, handling aut
 
 ---
 
-## 🏗️ Architecture
+🏗️ Architecture
 
-```plaintext
+
 +--------------------+
 |     API Client     |
 +---------+----------+
@@ -66,11 +65,11 @@ This microservice can be easily embedded within a larger ecosystem, handling aut
 +--------------------+
 |  Redis Cache / DB  |
 +--------------------+
-````
+
 
 ---
 
-## ⚙️ Technologies Used
+⚙️ Technologies Used
 
 * **Java 17+**
 * **Spring Boot 3+**
@@ -82,7 +81,7 @@ This microservice can be easily embedded within a larger ecosystem, handling aut
 
 ---
 
-## 📂 Project Structure
+📂 Project Structure
 
 ```
 ms-identity/
@@ -112,15 +111,15 @@ ms-identity/
 
 ---
 
-## 🧩 Installation
+🧩 Installation
 
-### Prerequisites
+   Prerequisites
 
 * Java 17 or higher
 * Gradle 7+
 * Redis server running locally or remotely
 
-### Steps
+Steps
 
 ```bash
 # 1. Clone the repository
@@ -138,7 +137,7 @@ By default, the application runs on **port 8080**.
 
 ---
 
-## ⚙️ Configuration
+⚙️ Configuration
 
 You can configure the application through the `application.yml` file or environment variables:
 
@@ -164,9 +163,9 @@ Set environment variables to override defaults when deploying to production.
 
 ---
 
-## 🚀 Usage
+🚀 Usage
 
-### Register a User
+   Register a User
 
 ```bash
 POST /api/v1/register
@@ -178,7 +177,7 @@ Content-Type: application/json
 }
 ```
 
-### Authenticate and Get Token
+Authenticate and Get Token
 
 ```bash
 POST /api/v1/auth
@@ -201,7 +200,7 @@ Response:
 
 ---
 
-## 🧾 API Documentation
+🧾 API Documentation
 
 After the application starts, access Swagger UI at:
 
@@ -209,7 +208,7 @@ After the application starts, access Swagger UI at:
 
 ---
 
-## 🧰 Troubleshooting
+🧰 Troubleshooting
 
 | Issue                      | Possible Cause                  | Solution                              |
 | -------------------------- | ------------------------------- | ------------------------------------- |
@@ -219,7 +218,7 @@ After the application starts, access Swagger UI at:
 
 ---
 
-## 👥 Contributors
+👥 Contributors
 
 * **Eldar Novruzov** – [novruzoveldar](https://github.com/novruzoveldar)
 
@@ -227,14 +226,10 @@ Contributions and pull requests are welcome!
 
 ---
 
-## 🪪 License
+🪪 License
 
 This project is licensed under the **MIT License**.
 See the [LICENSE](LICENSE) file for details.
-
----
-
-```
 
 ---
 
